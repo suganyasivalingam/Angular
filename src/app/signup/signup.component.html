@@ -1,0 +1,74 @@
+<h2>Create Account </h2>
+<div id="Signuppage" [formGroup]="signupForm">
+  <!-- <div class="form-group"
+  [class.has.error]="username.invalid && name.touched"
+  [class.has.success]="username.valid"> -->
+
+  <small *ngIf="signupForm.controls.username.touched && signupForm.controls.username.errors?.minlength" class="error">
+    Minimum length of text should be 3 characters
+  </small>
+  <small *ngIf="signupForm.controls.username.touched && signupForm.controls.username.errors?.maxlength" class="error">
+    Maximum length of text should be 10 characters
+  </small>
+  <small *ngIf="signupForm.controls.username.touched && signupForm.controls.username.errors?.required" class="error">
+    Username is required
+  </small>
+  {{'FIRSTNAME'|languages}} <input type="text" formControlName="username" #username
+    placeholder="{{'FIRSTNAME'|languages}}"><br>
+
+  <small *ngIf="signupForm.controls.surname.touched  && signupForm.controls.surname.errors?.minlength" class="error">
+    Minimum length of text should be 3 characters
+  </small>
+  <small *ngIf="signupForm.controls.surname.touched && signupForm.controls.surname.errors?.maxlength" class="error">
+    Maximum length of text should be 10 characters
+  </small>
+  <small *ngIf="signupForm.controls.surname.touched && signupForm.controls.surname.errors?.required" class="error">
+    Surname is required
+  </small>
+  {{'SURNAME'|languages}} <input type="text" formControlName="surname" #surname
+    placeholder="{{'SURNAME'|languages}}"><br>
+
+  {{'ADDRESS'|languages}} <input type="text" placeholder="{{'LINE1'|languages}}"> <br>
+  <input type="text" placeholder="{{'LINE2'|languages}}"> <br>
+  {{'CITY'|languages}}<input type="text" placeholder="{{'ENTERYOURCITY'|languages}}"> <br>
+
+  <small *ngIf="signupForm.controls.email.touched && signupForm.controls.email.errors?.required" class="error">
+    Email is required
+  </small>
+  <small *ngIf="signupForm.controls.email.touched && signupForm.controls.email.errors?.email" class="error">
+    Invalid Email ID
+  </small>
+  {{'EMAILID'|languages}}<input type="Text" formControlName="email" #email
+    placeholder="{{'ENTERYOUREMAILID'|languages}}"><br>
+
+  {{'CONFIRMEMAILID'|languages}}<input type="Text" placeholder="{{'CONFIRMEMAILID'|languages}}"><br>
+
+  <small *ngIf="signupForm.controls.password.touched  && signupForm.controls.password.errors?.minlength" class="error">
+    Minimum length of text should be 6 characters
+  </small>
+  <small *ngIf="signupForm.controls.password.touched && signupForm.controls.password.errors?.maxlength" class="error">
+    Maximum length of text should be 10 characters
+  </small>
+  <small *ngIf="signupForm.controls.password.touched && signupForm.controls.password.errors?.required" class="error">
+    Enter Password
+  </small>
+  {{'ENTERPASSWORD'|languages}}<input type="Password" formControlName="password"
+    placeholder="{{'ENTERPASSWORD'|languages}}"><br>
+
+  {{'CONFIRMPASSWORD'|languages}} <input type="password" placeholder="{{'CONFIRMPASSWORD'|languages}} "><br>
+  <input type="button" class="getin" (click)="showData()" value="{{'SIGNUP'|languages}}">
+  <input type="button" class="getin" value="{{'CANCEL'|languages}}"><br>
+  <p> Already User? <a routerLink="/login">Login</a></p>
+</div>
+<div *ngIf="signupForm.touched">
+  Touched
+</div>
+<div *ngIf="signupForm.untouched">
+  Untouched
+</div>
+<div *ngIf="signupForm.pristine">
+  Pristine
+</div>
+<div *ngIf="signupForm.dirty">
+  Dirty
+</div>

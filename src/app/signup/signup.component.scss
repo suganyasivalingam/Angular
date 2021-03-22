@@ -1,0 +1,44 @@
+#Signuppage {
+  border: 1px black;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(240, 238, 236);
+  border-radius: 10px;
+  text-align: right;
+}
+
+  h2 {
+
+    font-size: 25px;
+    color: rgb(102, 64, 64);
+    margin-left: 70%;
+    margin-top: 1%;
+  }
+.getin
+{
+  color: white;
+  background-color: grey;
+  text-align: center;
+  width: 10%;
+}
+  p {
+    margin-right: 200px;
+  }
+
+  input {
+    width: 20%;
+    border-radius: 15px;
+    border-bottom-left-radius: 20px;
+    margin: 8px;
+    align-content: center;
+    text-align: left;
+    margin-right: 100px;
+  }
+
+  .error {
+    color: red;
+
+  }
+

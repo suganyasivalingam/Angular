@@ -1,0 +1,33 @@
+<div class="dummy" id=dummy>
+
+  <h1>Directives</h1>
+  <button (click)="ChangeMe()"> {{'CLICK'|languages}}</button>
+  <input type="text" [value]="MyText">
+  <div *ngIf="showme">
+    <P>ngIf Directive</P>
+  </div>
+  <div [hidden]="showme">
+    <P>Hidden Directive</P>
+  </div>
+  <div [ngClass]="{'hi': showme }">
+    <P>ngClass Directive</P>
+  </div>
+  <div [ngStyle]="{'color':showme?'red':'blue'}">
+    <P>ngStyle Directive</P>
+  </div>
+  <div *ngIf="false">
+    <P>ngIf Directive</P>
+  </div>
+  <div appHighlight>
+    <p> Hi from Hightlight Directive</p>
+  </div>
+  <h1>Pipes</h1>
+  <h2> Uppercase </h2>
+  <p>{{'hEllo' | uppercase}}</p>
+  <h2>Lowercase</h2>
+  <p>{{'hELLO' | lowercase}}</p>
+  <h2>Titlecase </h2>
+  <p>{{'heLLO' | titlecase}}</p>
+  <h2>Languages</h2>
+  <p>{{'HELLO' | languages}}</p>
+</div>

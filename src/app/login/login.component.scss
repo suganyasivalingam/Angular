@@ -1,0 +1,55 @@
+#Login {
+  border: 1px rgb(22, 20, 20);
+  margin: 55px;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(240, 238, 236);
+  margin-top: 2%;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(102, 64, 64);
+  margin-left: 600px;
+  margin-top: 2%;
+}
+
+  .form-control {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+ 
+.password
+{
+  text-align: right;
+  margin-left:380px;
+}
+  .btn btn-danger {
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .checkbox {
+    float: left;
+    margin-left: 5px;
+    text-align: right;
+  }
+
+  .click {
+    background-color: gray;
+    border-radius: 100px;
+    width: 50%;
+     margin-left: 20%;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+  }

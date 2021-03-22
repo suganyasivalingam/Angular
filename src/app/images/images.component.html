@@ -1,0 +1,11 @@
+<div class="page">
+   <div id=Images *ngFor="let photos of album">
+      <!-- <p>ANGULAR</p>
+       <div style="background-image: url('home.jpg');"></div>
+        </div> -->
+      <!-- <img > -->
+      <!-- <p>{{photos.url}}</p>÷ -->
+      <img class="display" [attr.src]="photos.url" alt="">
+    </div>
+       
+</div>

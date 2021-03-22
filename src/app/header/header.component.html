@@ -1,0 +1,53 @@
+<div id=Header>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home1"><i class="fas fa-home"></i>
+          {{'HOME'| languages:nextlanguage}}</a>
+        </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/login"><i class="fas fa-user-plus"></i>
+          {{'LOGIN' | languages:nextlanguage}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Signup"><i class="fas fa-sign-in-alt"></i>
+          {{'SIGNUP' | languages:nextlanguage}}</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Dummy"> <i class="fas fa-scroll"></i> {{'DUMMY'| languages:nextlanguage}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/images"><i class="far fa-images"></i>
+          {{'IMAGES'| languages:nextlanguage}}</a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Employeelist"><i class="fas fa-list"></i>
+          {{'EMPLOYEELIST'| languages:nextlanguage}}</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/employee"><i class="far fa-file-alt"></i>
+          {{'EMPLOYEE'| languages:nextlanguage}}</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/pagination"><i class="far fa-file-alt"></i>
+          {{'PAGINATION' | languages:nextlanguage}}</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="/languages"><i class="fab fa-pied-piper-alt"></i>
+          {{'PIPE'| languages:nextlanguage}}</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="/charts"><i class="fas fa-chart-line"></i>
+          {{'CHARTS'| languages:nextlanguage}}</a>
+      </li>
+      <div class="select">
+        <select [(ngModel)]="nextlanguage" (change)="changenextlanguage()">
+          <option value="TAMIL">TAMIL</option>
+          <option value="ENGLISH">ENGLISH</option>
+          <option value="HINDI">HINDI</option>
+          <option value="PORTUGUESE">PORTUGUESE</option>
+          <option value="GERMAN">GERMAN</option>
+        </select>
+      </div>
+    </ul>
+  </nav>
+</div>

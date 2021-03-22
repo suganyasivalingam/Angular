@@ -1,0 +1,8 @@
+<div id=Employeelist>
+  <div class="details" *ngFor="let content of employeeArray;index as i">
+    <img class="image" src="/assets/dummy.jpg" alt=""><br>
+    <p input type="text">NAME : {{content.Name}}</p>
+    <button (click)="Id(i)">{{content.EmployeeID}} </button>
+   
+  </div>
+</div>

@@ -1,0 +1,23 @@
+#Employee .table {
+  display: table;
+  // border-collapse: separate;
+  border-spacing: 1px;
+  border-collapse: collapse;
+  border: 2px solid rgb(100, 100, 100);
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 1rem;
+
+}
+.image
+{
+  padding-top:15px;
+}
+
+.col-md-9 {
+  padding-top: 15px;
+}
+.btn btn-primary
+{
+  background-color: rgb(112, 108, 108);
+}

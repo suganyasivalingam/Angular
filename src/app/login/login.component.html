@@ -1,0 +1,15 @@
+<h2> User Account</h2>
+<div id="Login">
+  <form (submit)="loginUser($event)">
+    <i class="fas fa-sign-in-alt"></i> {{'USERNAME'| languages}}<br>
+    <input type="text" class="form-control" placeholder="{{'ENTERUSERNAME'|languages}}" id="username"><br>
+    <i class="fas fa-unlock-alt"></i> {{'PASSWORD'| languages}} <br>
+    <input type="password" class="form-control" placeholder="{{'ENTERPASSWORD'|languages}}" id="password"><br>
+
+    <input class="checkbox" type="checkbox"> Remember me
+    <a class="password" routerLink="/forgotpassword"> Forgot Password?</a> <br>
+
+    <button class="click"><i class="fas fa-mouse"></i> {{'Login' |languages}} </button><br>
+    <!-- <button class="btn btn-danger"> <i class="fas fa-ban"></i> {{'CANCEL'|languages}} </button><br> -->
+    New User? <a routerLink="/Signup"> Signup </a>
+  </form>
